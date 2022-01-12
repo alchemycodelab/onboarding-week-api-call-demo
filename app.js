@@ -12,7 +12,6 @@ const template = document.querySelector('#template');
 const list = document.querySelector('#list');
 const selectEl = document.querySelector('select');
 const audio = document.querySelector('audio');
-const main = document.querySelector('main');
 /// Validate the data from the API by console logging the data
 // ex: console.log(template, list);
 
