@@ -84,15 +84,19 @@ async function loadStarWars() {
 
 
 // set event listeners 
-    // get user input
-    // use user input to update state
-    // update DOM to reflect the new state
-    
 selectEl.addEventListener('change', async(e) => { 
     if (e.target.value === 'pokemon') {
+         // get user input
+            // use user input to update state
+            // update DOM to reflect the new state
+        /// 1. Clear the list element to then render the new data
         list.innerHTML = '';
         await loadPokedex();
     } else if (e.target.value === 'star-wars') {
+               // get user input
+            // use user input to update state
+            // update DOM to reflect the new state
+        /// 1. Clear the list element to then render the new data
         list.innerHTML = '';
         await loadStarWars();
     }
