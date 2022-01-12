@@ -12,6 +12,8 @@ const template = document.querySelector('#template');
 const list = document.querySelector('#list');
 const selectEl = document.querySelector('select');
 const audio = document.querySelector('audio');
+const offButton = document.querySelector('#stop');
+
 /// Validate the data from the API by console logging the data
 // ex: console.log(template, list);
 
@@ -114,4 +116,7 @@ selectEl.addEventListener('change', async(e) => {
     }
     /// Remove the class for each time the selectEl changes
   
+});
+offButton.addEventListener('click', () => { 
+    audio.pause();
 });
